@@ -47,6 +47,8 @@ namespace EditPDF
         {
             string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
             foreach (string file in files) Console.WriteLine(file);
+
+            textBox1.Text = files.ElementAt(0).ToString();
         }
     }
 }
