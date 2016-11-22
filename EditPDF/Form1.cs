@@ -20,6 +20,8 @@ namespace EditPDF
             this.DragEnter += new DragEventHandler(Form1_DragEnter);
             this.DragDrop += new DragEventHandler(Form1_DragDrop);
 
+            backgroundWorker1.RunWorkerAsync();
+
         }
 
         private void label1_Click(object sender, EventArgs e)
